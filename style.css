@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: customfont;
+    src:url(circular-std-medium-500.ttf)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.Logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 20px;    
+
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    margin: 40px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px black;
+    font-size: 22px;
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: #fff;
+    transition: .3s;
+
+}
+
+.navigation a:hover:after {
+    width: 100%;
+}
+
+.navigation .ButtonLogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .3s;
+    
+}
+
+.navigation .ButtonLogin:hover {
+    background: #fff;
+    color: #162938;
+    
+}
+
+.wrapper {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    color: #162938;
+    text-align: center;
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #162938;
+    font-weight: 700;
+    pointer-events: none;
+    transition: .3s;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -20px;
+} 
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #162938;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 6px;
+    font-size: 20px;
+    color: #162938;
+    line-height: 47px;
+
+}
+
+.remember-forgot {
+    color: #162938;
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 5px;
+
+}
+
+.remember-forgot a {
+    position: relative;
+    text-decoration: none;
+    color: #162938;
+    font-weight: 500;
+    font-size: 14px;
+    top: 3px;
+
+}    
+.remember-forgot a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: #000000;
+    transition: .3s;
+
+}
+
+.remember-forgot a:hover:after {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938; 
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+.line {
+    border-top: 1px solid #000000;
+    margin: 20px;
+    width: 80%;
+}
+
+.registration-link {
+   font-size: 15px;
+   text-decoration: none;
+   color: #162938;
+   text-align: center;
+   font-weight: 600;
+   margin: 25px 0 10px ;
+
+}
+
+.registration-link a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    color: #162938;
+    top: 5px;
+ 
+ }
+
+ .registration-link a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        border-radius: 5px;
+        background: #000000;
+        transition: .3s;
+ }
+
+ .registration-link a:hover::after {
+    width: 100%;
+    font-size: 20px ;
+ }
